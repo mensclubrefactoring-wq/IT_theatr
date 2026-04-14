@@ -148,7 +148,7 @@ export default function App() {
               <h2 className="text-4xl font-bold mb-6">Театр технологий <br/>и <span className="text-brand-primary">традиций</span></h2>
               <p className="text-gray-400 text-lg mb-6 leading-relaxed">
                 Иммерсивный театр народов России «Калык шынык» обладает уникальным опытом работы в ТЦ. 
-                Мы проводим масштабные мероприятия, раскрывающие культурный код коренных народов России через призму современных технологий.
+                Мы проводим мероприятия, раскрывающие культурный код коренных народов России через призму современных технологий.
               </p>
               <div className="space-y-4">
                 {[
@@ -183,6 +183,62 @@ export default function App() {
               <div className="absolute -bottom-6 -right-6 glass p-6 rounded-xl hidden md:block">
                 <div className="text-3xl font-bold text-brand-primary">2026</div>
                 <div className="text-xs text-gray-400 uppercase tracking-widest">Новый сезон</div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Study Section */}
+      <section className="py-24 px-4 bg-brand-primary/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="rounded-3xl overflow-hidden glass aspect-square md:aspect-video relative"
+            >
+              <img 
+                src="https://picsum.photos/seed/it-theater/1200/800" 
+                alt="School 21 Case" 
+                className="w-full h-full object-cover opacity-70"
+                referrerPolicy="no-referrer"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-bg to-transparent opacity-60" />
+              <div className="absolute bottom-8 left-8">
+                <div className="px-3 py-1 bg-brand-primary text-dark-bg text-xs font-bold rounded-full mb-2 inline-block">УСПЕШНЫЙ КЕЙС</div>
+                <h3 className="text-2xl font-bold">Школа 21 от Сбера</h3>
+              </div>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h3 className="text-3xl font-bold mb-6">Театральный клуб в <span className="text-brand-primary">«Школе 21»</span></h3>
+              <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+                Мы открыли театральный клуб в образовательном проекте Сбера. Здесь айтишники «перекодируют» классику в современные IT-спектакли.
+              </p>
+              <ul className="space-y-4 mb-8">
+                <li className="flex items-start gap-3">
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-primary shrink-0" />
+                  <span className="text-gray-400">Чехов и Островский в цифровой интерпретации</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-primary shrink-0" />
+                  <span className="text-gray-400">Фэнтези-квесты, вовлекающие аудиторию</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-brand-primary shrink-0" />
+                  <span className="text-gray-400">Полные залы и высокая лояльность IT-сообщества</span>
+                </li>
+              </ul>
+              <div className="p-6 glass rounded-2xl border-l-4 border-brand-primary">
+                <p className="italic text-gray-300">
+                  "Это новый формат взаимодействия с будущими инженерами через искусство и технологии."
+                </p>
               </div>
             </motion.div>
           </div>
