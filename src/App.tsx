@@ -200,7 +200,7 @@ export default function App() {
               className="rounded-3xl overflow-hidden glass aspect-square md:aspect-video relative"
             >
               <img 
-                src="https://picsum.photos/seed/it-theater/1200/800" 
+                src="input_file_0.png" 
                 alt="School 21 Case" 
                 className="w-full h-full object-cover opacity-70"
                 referrerPolicy="no-referrer"
